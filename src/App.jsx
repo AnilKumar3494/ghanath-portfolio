@@ -1,9 +1,13 @@
 import React from "react";
-import NavBar from "./components/NavBar";
+import NavBar from "./pages/NavBar";
 import { Route, Routes } from "react-router-dom";
 
-import Intro from "./components/Intro";
-import Project from "./components/Project";
+//Importing pages
+import Intro from "./pages/Intro";
+import Project from "./pages/Project";
+import About from "./pages/About";
+import Experience from "./pages/Experience";
+import Contact from "./pages/Contact";
 
 const App = () => {
   return (
@@ -12,6 +16,9 @@ const App = () => {
       <Routes>
         <Route path="/intro" element={<Intro />} />
         <Route path="/project" element={<Project />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/experience" element={<Experience />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </>
   );
