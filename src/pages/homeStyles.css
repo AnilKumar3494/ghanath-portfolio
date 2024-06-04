@@ -1,0 +1,46 @@
+h3 {
+  font-size: 3.5rem;
+}
+p {
+  font-size: 1.2rem;
+}
+
+.landing_page_hero {
+  height: 100dvh;
+
+  background-image: url(../assets/backgroundImages/laptopbg.avif);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* typograpgy */
+  color: var(--text-gray);
+  letter-spacing: 1px;
+
+  /* centering everything */
+  display: grid;
+  align-items: center;
+}
+
+.landing_page_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 2rem;
+}
+
+.intro_text {
+  border-top: 2px solid var(--primary-white);
+  border-bottom: 2px solid var(--primary-white);
+
+  padding-block: 3rem;
+  margin-bottom: 3rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+
+  width: 70%;
+}
