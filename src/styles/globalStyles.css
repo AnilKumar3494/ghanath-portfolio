@@ -1,5 +1,10 @@
 :root {
-  --primary-white: #0a0b0d;
+  --primary-white: #fafafa;
+  --text-gray: #f0f0f0;
+  --medium-gray: #c8c8c8;
+  --dark-gray: #333333;
+
+  --bg-black: #181c1f;
 }
 
 *,
