@@ -1,8 +1,9 @@
 h3 {
-  font-size: 3.5rem;
+  font-size: var(--font-size-700);
 }
 p {
-  font-size: 1.2rem;
+  font-size: var(--font-size-200);
+  color: var(--medium-gray);
 }
 
 .landing_page_hero {
@@ -20,6 +21,26 @@ p {
   /* centering everything */
   display: grid;
   align-items: center;
+
+  /* background opacity */
+  position: relative;
+  isolation: isolate;
+
+  line-height: 1.5;
+
+  border: 5px solid magenta;
+}
+
+/* for background opacity */
+.landing_page_hero::after {
+  content: "";
+
+  position: absolute;
+  background-color: black;
+  inset: 0;
+
+  opacity: 0.5;
+  z-index: -1;
 }
 
 .landing_page_content {
@@ -27,12 +48,15 @@ p {
   flex-direction: column;
   align-items: center;
 
-  gap: 2rem;
+  gap: 3rem;
+
+  /* border: 2px solid greenyellow; */
+  backdrop-filter: blur(2px);
 }
 
 .intro_text {
-  border-top: 2px solid var(--primary-white);
-  border-bottom: 2px solid var(--primary-white);
+  border-top: 1px solid var(--primary-white);
+  border-bottom: 1px solid var(--primary-white);
 
   padding-block: 3rem;
   margin-bottom: 3rem;

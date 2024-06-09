@@ -1,5 +1,6 @@
 .nav_bar {
   color: var(--text-gray);
+  font-size: var(--font-size-150);
   font-weight: bold;
   border: 2px solid var(--primary-white);
 

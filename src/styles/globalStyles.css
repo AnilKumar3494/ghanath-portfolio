@@ -1,10 +1,19 @@
 :root {
   --primary-white: #fafafa;
   --text-gray: #f0f0f0;
-  --medium-gray: #c8c8c8;
+  --medium-gray: #8e8c8c;
   --dark-gray: #333333;
 
   --bg-black: #181c1f;
+
+  --font-size-100: 1rem;
+  --font-size-150: 1.2rem;
+  --font-size-200: 1.5rem;
+  --font-size-300: 1.8rem;
+  --font-size-400: 2.2rem;
+  --font-size-500: 2.5rem;
+  --font-size-600: 3rem;
+  --font-size-700: 4rem;
 }
 
 *,

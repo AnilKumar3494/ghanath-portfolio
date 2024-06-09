@@ -9,9 +9,8 @@ const Home = () => {
       <section className="landing_page_content">
         <div className="intro_text">
           <h3>Hi, I'm Ghanath Vootukuru</h3>
-          <p>This would be the landing page with my short description!</p>
+          <p>This would be the landing page with a short description!</p>
         </div>
-
         <NavBar />
       </section>
     </div>
