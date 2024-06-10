@@ -28,7 +28,7 @@ p {
 
   line-height: 1.5;
 
-  border: 5px solid magenta;
+  /* border: 5px solid magenta; */
 }
 
 /* for background opacity */
@@ -67,4 +67,14 @@ p {
   gap: 2rem;
 
   width: 70%;
+}
+
+/* QuickLinks */
+.quick_links {
+  position: absolute;
+
+  bottom: 7rem;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
 }
