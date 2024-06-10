@@ -15,8 +15,10 @@
   width: 100%;
   padding-block: 1rem;
   border-right: 1px solid var(--primary-white);
-
   text-align: center;
+
+  /* Ensure the transition is consistent */
+  transition: all 0.3s ease-in-out;
 }
 
 .nav_bar .nav_link:hover {

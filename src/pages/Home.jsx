@@ -2,6 +2,7 @@ import React from "react";
 import NavBar from "../components/NavBar";
 
 import "./homeStyles.css";
+import QuickLinks from "../components/QuickLinks";
 
 const Home = () => {
   return (
@@ -11,7 +12,12 @@ const Home = () => {
           <h3>Hi, I'm Ghanath Vootukuru</h3>
           <p>This would be the landing page with a short description!</p>
         </div>
-        <NavBar />
+
+        <NavBar className="nav_bar" />
+      </section>
+
+      <section className="quick_links">
+        <QuickLinks />
       </section>
     </div>
   );
