@@ -13,6 +13,7 @@ import Contact from "./pages/Contact";
 //importing styles
 import "./styles/globalStyles.css";
 import Home from "./pages/Home";
+// import Container from "./components/Container";
 
 const router = createBrowserRouter([
   {
