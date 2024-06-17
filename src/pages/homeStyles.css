@@ -7,7 +7,7 @@ p {
 }
 
 .landing_page_hero {
-  height: 100dvh;
+  min-height: 100dvh;
 
   background-image: url(../assets/backgroundImages/laptopbg.avif);
   background-size: cover;

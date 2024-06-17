@@ -24,3 +24,7 @@
 .nav_bar .nav_link:hover {
   background: rgba(255, 255, 255, 0.2);
 }
+
+.nav_bar .nav_link.active {
+  background: rgba(255, 255, 255, 0.2);
+}
