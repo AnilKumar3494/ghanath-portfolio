@@ -18,11 +18,17 @@
 
 .bg_img_check::after {
   content: "";
-
   position: absolute;
-  background-color: black;
-  inset: 0;
 
-  opacity: 0.5;
+  /* background gradient */
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.7) 0%,
+    /* dark at the center */ rgba(0, 0, 0, 0.5) 30%,
+    /* dark at the middle */ rgba(255, 0, 0, 0.1) 60%,
+    /* subtle red */ rgba(0, 0, 255, 0.1) 100% /* subtle blue */
+  );
+
+  inset: 0;
   z-index: -1;
 }

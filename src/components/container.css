@@ -2,6 +2,10 @@
   z-index: -100;
 }
 
+span {
+  font-size: var(--font-size-125);
+}
+
 img {
   width: 400px;
 }
@@ -50,9 +54,10 @@ ul {
 
 .container_content {
   margin-top: 8rem;
+  margin-bottom: 8rem;
   padding: 1rem;
   border: 1px solid wheat;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(20px);
   /* adjust this for screen - responsive */
   max-width: 85%;
 
@@ -67,6 +72,10 @@ ul {
   gap: 2rem;
 }
 
+.buttons_container {
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
 .button {
   border: 1px solid var(--primary-white);
   padding: 0.7rem 1.3rem;
