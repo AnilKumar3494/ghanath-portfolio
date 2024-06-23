@@ -6,7 +6,13 @@ p {
   color: var(--medium-gray);
 }
 
-.landing_page_hero {
+.content_align {
+  /* centering everything */
+  display: grid;
+  align-items: center;
+}
+
+.background_image {
   min-height: 100dvh;
 
   background-image: url(../assets/backgroundImages/laptopbg.avif);
@@ -18,10 +24,6 @@ p {
   color: var(--text-gray);
   letter-spacing: 1px;
 
-  /* centering everything */
-  display: grid;
-  align-items: center;
-
   /* background opacity */
   position: relative;
   isolation: isolate;
@@ -32,7 +34,7 @@ p {
 }
 
 /* for background opacity */
-.landing_page_hero::after {
+.background_image::after {
   content: "";
 
   position: absolute;

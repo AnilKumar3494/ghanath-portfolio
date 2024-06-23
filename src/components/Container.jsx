@@ -3,11 +3,32 @@ import "./container.css";
 
 const Container = (props) => {
   return (
-    <div className="container_text">
-      {props.input.map((item) => (
-        <p key={item.id}>{item.para}</p>
-      ))}
-    </div>
+    <>
+      <div className="flex_col_2">
+        {props.input.map((item) => (
+          <div key={item.id} className="flex_col_2">
+            {/* PROJECT DETAILS START*/}
+            {item.projectTitle ? (
+              <div>
+                <h3 className="h3">{item.projectTitle}</h3>
+                <p className="detials_para">{item.description}</p>
+                <ul>
+                  {item.details.map((detial, index) => (
+                    <li className="list_item" key={index}>
+                      {detial}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null}
+            {/* PROJECT DETAILS END*/}
+
+            {/* INTRo DETAILS START*/}
+            {item.inputPara ? <p>{item.inputPara}</p> : null}
+          </div>
+        ))}
+      </div>
+    </>
   );
 };
 
