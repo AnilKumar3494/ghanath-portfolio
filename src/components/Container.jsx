@@ -7,6 +7,27 @@ const Container = (props) => {
       <div className="flex_col_2">
         {props.input.map((item) => (
           <div key={item.id} className="flex_col_2">
+            {/* Experience Details Start */}
+            {item.jobTitle ? (
+              <div>
+                <h3 className="h3">
+                  {item.jobTitle} | {item.company} |{" "}
+                  <span>
+                    ( {item.location} {item.duration} )
+                  </span>
+                </h3>
+                <p className="detials_para">{item.description}</p>
+                <ul>
+                  {item.details.map((detail, index) => (
+                    <li className="list_item" key={index}>
+                      {detail}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null}
+            {/* Experience Details END */}
+
             {/* PROJECT DETAILS START*/}
             {item.projectTitle ? (
               <div>
@@ -42,7 +63,9 @@ const Container = (props) => {
             {/* PROJECT DETAILS END*/}
 
             {/* INTRo DETAILS START*/}
-            {item.inputPara ? <p>{item.inputPara}</p> : null}
+            {item.inputPara ? (
+              <p className="input_para">{item.inputPara}</p>
+            ) : null}
           </div>
         ))}
       </div>

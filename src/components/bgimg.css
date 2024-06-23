@@ -23,10 +23,10 @@
   /* background gradient */
   background: radial-gradient(
     circle,
-    rgba(0, 0, 0, 0.7) 0%,
-    /* dark at the center */ rgba(0, 0, 0, 0.5) 30%,
-    /* dark at the middle */ rgba(255, 0, 0, 0.1) 60%,
-    /* subtle red */ rgba(0, 0, 255, 0.1) 100% /* subtle blue */
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0.6) 40%,
+    rgba(255, 0, 0, 0.1) 50%,
+    rgba(0, 0, 255, 0.25) 100%
   );
 
   inset: 0;
