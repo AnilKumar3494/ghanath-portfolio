@@ -17,6 +17,8 @@ const projectsInput = [
       "Utilized tools like Nmap and CrackStation to perform hash cracking experiments, evaluating the security vulnerabilities of different hashing algorithms.",
       "Collaborated with team members to simulate real-world forensic scenarios and present findings on the significance of secure hashing algorithms in preserving digital evidence integrity.",
     ],
+    demo: "#url",
+    code: "#github url",
   },
   {
     id: 2,
@@ -29,6 +31,8 @@ const projectsInput = [
       "Utilized shell scripting basics to create custom scripts for capturing and analyzing traffic data.",
       "Implemented advanced filtering techniques using tcpdump expressions to refine traffic analysis results.",
     ],
+    demo: "#url",
+    code: "#github url",
   },
   {
     id: 3,
@@ -43,6 +47,8 @@ const projectsInput = [
       "Implemented security project plans emphasizing risk-based approaches, Security Development Lifecycle (SDL), and adherence to compliance frameworks.",
       "Delivered real-world case studies demonstrating the practical application of theoretical concepts in strengthening organizational resilience.",
     ],
+    demo: "#url",
+    code: "#github url",
   },
   {
     id: 4,
@@ -54,6 +60,8 @@ const projectsInput = [
       "Successfully reviewed and updated threat definitions, executed Defender Antivirus quick scans, and configured Firewall Rules with and without Advanced Security.",
       "Expanded cybersecurity skills through the Introduction to Cybersecurity Essentials course, gaining valuable skills for entering the field.",
     ],
+    demo: "#url",
+    code: "#github url",
   },
   {
     id: 5,
@@ -67,6 +75,8 @@ const projectsInput = [
       "Documented the design process and findings to provide a comprehensive overview of the project's development.",
       "Played a key role in tracking the project's timeline and tasks.",
     ],
+    demo: "#url",
+    code: "#github url",
   },
   {
     id: 6,
@@ -80,6 +90,8 @@ const projectsInput = [
       "Recognized as one of the top 10 projects in the class, highlighting the project's innovation and effectiveness.",
       "Assisted in project management tasks, including defining scope, coordinating team activities, and ensuring adherence to timelines.",
     ],
+    demo: "#url",
+    code: "#github url",
   },
 ];
 
@@ -93,7 +105,7 @@ const Project = () => {
 
         <section className="container">
           <div className="container_content">
-            <h2 className="h2">Project</h2>
+            <h2 className="h2">Projects</h2>
             {/* <img
               src={projectsBg}
               alt="A sample project image would be here"

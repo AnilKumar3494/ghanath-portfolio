@@ -10,7 +10,9 @@ const Container = (props) => {
             {/* PROJECT DETAILS START*/}
             {item.projectTitle ? (
               <div>
-                <h3 className="h3">{item.projectTitle}</h3>
+                <h3 className="h3">
+                  {item.projectTitle} | <span>{item.duration}</span>
+                </h3>
                 <p className="detials_para">{item.description}</p>
                 <ul>
                   {item.details.map((detial, index) => (
@@ -19,6 +21,22 @@ const Container = (props) => {
                     </li>
                   ))}
                 </ul>
+                <div>
+                  {item.demo || item.code ? (
+                    <div className="buttons_container">
+                      {item.demo && (
+                        <a href="" className="button">
+                          Demo
+                        </a>
+                      )}
+                      {item.code && (
+                        <a href="" className="button">
+                          Code
+                        </a>
+                      )}
+                    </div>
+                  ) : null}
+                </div>
               </div>
             ) : null}
             {/* PROJECT DETAILS END*/}
