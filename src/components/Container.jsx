@@ -4,41 +4,27 @@ import "./container.css";
 const Container = (props) => {
   return (
     <>
-      <div className="container_text">
+      <div className="flex_col_2">
         {props.input.map((item) => (
-          <div key={item.id} className="container_text">
-            <p>{item.para}</p>
-            {item.demo && item.code ? (
-              <div className="button_container">
-                <a
-                  href={item.demo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="button"
-                >
-                  Demo
-                </a>
-                <a
-                  href={item.code}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="button"
-                >
-                  Code
-                </a>
-              </div>
-            ) : item.demo ? (
+          <div key={item.id} className="flex_col_2">
+            {/* PROJECT DETAILS START*/}
+            {item.projectTitle ? (
               <div>
-                <a
-                  href={item.demo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="button"
-                >
-                  Demo
-                </a>
+                <h3 className="h3">{item.projectTitle}</h3>
+                <p className="detials_para">{item.description}</p>
+                <ul>
+                  {item.details.map((detial, index) => (
+                    <li className="list_item" key={index}>
+                      {detial}
+                    </li>
+                  ))}
+                </ul>
               </div>
             ) : null}
+            {/* PROJECT DETAILS END*/}
+
+            {/* INTRo DETAILS START*/}
+            {item.inputPara ? <p>{item.inputPara}</p> : null}
           </div>
         ))}
       </div>
