@@ -7,15 +7,31 @@ const Experience = () => {
   const input = [
     {
       id: "1",
-      para: "Experiecne 1:Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, fuga dolore praesentium debitis placeat, ea quo, quasi autem omnis laudantium eius reiciendis sapiente. Non consequatur quae, ducimus amet quam porro!",
+      jobTitle: "Analyst",
+      company: "Mastercard Cybersecurity Virtual Experience Program",
+      duration: "Feb 2024",
+      description:
+        "Completed a job simulation as an analyst on Mastercard’s Security Awareness Team, identifying and reporting security threats.",
+      details: [
+        "Helped identify and report security threats such as phishing.",
+        "Analyzed and identified areas of the business needing more robust security training.",
+        "Implemented training courses and procedures for those teams.",
+      ],
     },
     {
       id: "2",
-      para: "Experiecne 1:Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi autem ipsum rem dolor repudiandae delectus. Rem quidem, officia odit pariatur eligendi sunt deserunt omnis ut tenetur laborum reiciendis magnam impedit et obcaecati voluptatum, voluptate voluptatem ipsum placeat repellendus commodi eum ad tempora voluptates. Distinctio magni, molestias fugit aliquid assumenda nobis repellat! Optio porro delectus dolorum architecto labore voluptatum similique possimus quaerat ducimus at laudantium, quisquam, libero alias. Consequuntur repellendus delectus, illum, animi fuga quos repellat laudantium numquam fugiat illo dignissimos.",
-    },
-    {
-      id: "3",
-      para: "Experiecne 1:Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque sapiente rem corporis praesentium laborum. Vitae nemo earum libero unde ex.",
+      jobTitle: "Product Manager",
+      company: "WIDER (Startup E-commerce Platform)",
+      location: "Bangalore, India |",
+      duration: "Apr 2021 - Jul 2022",
+      description:
+        "Shaped the strategic direction of the e-commerce platform, prioritizing user experience and market alignment. Managed the product lifecycle from conception to launch, ensuring alignment with business goals.",
+      details: [
+        "Led cross-functional teams spanning marketing, web development, and vendor relations, fostering collaboration and innovation.",
+        "Established strategic partnerships with key vendors, enhancing the product catalogue and managing on-site engagements for improved visual appeal and accuracy.",
+        "Integrated advanced features like real-time messaging plugins and 360-degree product views, enhancing customer experience and setting industry standards.",
+        "Adapted effectively to a hybrid work model, contributing to the company’s transition to an online business advisory service, showcasing strategic agility.",
+      ],
     },
   ];
 
@@ -26,8 +42,8 @@ const Experience = () => {
       </nav>
       <section className="container">
         <div className="container_content">
-          <h2 className="h2">Experience</h2>
-          <img src="" alt="A sample project image would be here" />
+          <h2 className="h2">My Experiences</h2>
+          {/* <img src="" alt="A sample project image would be here" /> */}
           <Container input={input} />
         </div>
       </section>
