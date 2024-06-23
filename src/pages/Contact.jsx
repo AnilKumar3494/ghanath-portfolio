@@ -1,10 +1,11 @@
 import React from "react";
 import NavBar from "../components/NavBar";
 import Container from "../components/Container";
+import BgImg from "../components/BgImg";
 
 const Contact = () => {
   return (
-    <>
+    <BgImg>
       <nav>
         <NavBar />
       </nav>
@@ -15,7 +16,7 @@ const Contact = () => {
           {/* <Container /> */}
         </div>
       </section>
-    </>
+    </BgImg>
   );
 };
 

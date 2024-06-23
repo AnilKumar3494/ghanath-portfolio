@@ -1,9 +1,10 @@
 import React from "react";
 import NavBar from "../components/NavBar";
+import BgImg from "../components/BgImg";
 
 const Experience = () => {
   return (
-    <>
+    <BgImg>
       <nav>
         <NavBar />
       </nav>
@@ -14,7 +15,7 @@ const Experience = () => {
           {/* <Container /> */}
         </div>
       </section>
-    </>
+    </BgImg>
   );
 };
 

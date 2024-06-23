@@ -6,7 +6,7 @@ import QuickLinks from "../components/QuickLinks";
 
 const Home = () => {
   return (
-    <div className="landing_page_hero">
+    <div className="background_image content_align">
       <section className="landing_page_content">
         <div className="intro_text">
           <h3>Hi, I'm Ghanath Vootukuru</h3>

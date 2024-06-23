@@ -1,3 +1,7 @@
+.bg_img {
+  z-index: -100;
+}
+
 .h2 {
   font-size: 5rem;
   font-size: var(--font-size-600);
@@ -29,6 +33,7 @@
   margin-top: 8rem;
   padding: 1rem;
   border: 1px solid wheat;
+  backdrop-filter: blur(4px);
   /* adjust this for screen - responsive */
   max-width: 85%;
 

@@ -1,6 +1,7 @@
 import React from "react";
 import NavBar from "../components/NavBar";
 import Container from "../components/Container";
+import BgImg from "../components/BgImg";
 
 const input = [
   {
@@ -24,17 +25,19 @@ const input = [
 const Project = () => {
   return (
     <>
-      <nav>
-        <NavBar />
-      </nav>
+      <BgImg>
+        <nav>
+          <NavBar />
+        </nav>
 
-      <section className="container">
-        <div className="container_content">
-          <h2 className="h2">Project</h2>
-          <img src="" alt="A sample project image would be here" />
-          <Container input={input} />
-        </div>
-      </section>
+        <section className="container">
+          <div className="container_content">
+            <h2 className="h2">Project</h2>
+            <img src="" alt="A sample project image would be here" />
+            <Container input={input} />
+          </div>
+        </section>
+      </BgImg>
     </>
   );
 };

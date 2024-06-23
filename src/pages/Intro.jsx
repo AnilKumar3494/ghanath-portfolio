@@ -1,9 +1,11 @@
+// Intro.js
 import React from "react";
 import NavBar from "../components/NavBar";
 import Container from "../components/Container";
 
 import "../components/container.css";
 import "../styles/globalStyles.css";
+import BgImg from "../components/BgImg";
 
 const Intro = () => {
   const input = [
@@ -22,19 +24,19 @@ const Intro = () => {
   ];
 
   return (
-    <>
+    <BgImg>
       <nav>
         <NavBar />
       </nav>
 
       <section className="container">
         <div className="container_content">
-          <h2 className="h2">About</h2>
+          <h2 className="h2">Intro</h2>
           <img src="" alt="A sample image would be here" />
           <Container input={input} />
         </div>
       </section>
-    </>
+    </BgImg>
   );
 };
 

@@ -1,0 +1,28 @@
+.bg_img_check {
+  min-height: 100dvh;
+  background-image: url(../assets/backgroundImages/laptopbg.avif);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* typography */
+  color: var(--text-gray);
+  letter-spacing: 1px;
+
+  /* background opacity */
+  position: relative;
+  isolation: isolate;
+
+  line-height: 1.5;
+}
+
+.bg_img_check::after {
+  content: "";
+
+  position: absolute;
+  background-color: black;
+  inset: 0;
+
+  opacity: 0.5;
+  z-index: -1;
+}
