@@ -2,6 +2,7 @@ import React from "react";
 import NavBar from "../components/NavBar";
 import BgImg from "../components/BgImg";
 import Container from "../components/Container";
+import QuickLinks from "../components/QuickLinks";
 
 const Experience = () => {
   const input = [
@@ -37,9 +38,8 @@ const Experience = () => {
 
   return (
     <BgImg>
-      <nav>
-        <NavBar />
-      </nav>
+      <NavBar />
+
       <section className="container">
         <div className="container_content">
           <h2 className="h2">My Experiences</h2>
@@ -47,6 +47,8 @@ const Experience = () => {
           <Container input={input} />
         </div>
       </section>
+
+      <QuickLinks />
     </BgImg>
   );
 };

@@ -3,6 +3,7 @@ import NavBar from "../components/NavBar";
 import Container from "../components/Container";
 import BgImg from "../components/BgImg";
 import projectsBg from "../assets/backgroundImages/projectsBg.jpg";
+import QuickLinks from "../components/QuickLinks";
 
 const projectsInput = [
   {
@@ -97,25 +98,23 @@ const projectsInput = [
 
 const Project = () => {
   return (
-    <>
-      <BgImg>
-        <nav>
-          <NavBar />
-        </nav>
+    <BgImg>
+      <NavBar />
 
-        <section className="container">
-          <div className="container_content">
-            <h2 className="h2">Projects</h2>
-            {/* <img
+      <section className="container">
+        <div className="container_content">
+          <h2 className="h2">Projects</h2>
+          {/* <img
               src={projectsBg}
               alt="A sample project image would be here"
               className="banner_img"
             /> */}
-            <Container input={projectsInput} />
-          </div>
-        </section>
-      </BgImg>
-    </>
+          <Container input={projectsInput} />
+        </div>
+      </section>
+
+      <QuickLinks />
+    </BgImg>
   );
 };
 
