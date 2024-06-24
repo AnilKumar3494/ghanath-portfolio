@@ -2,23 +2,26 @@ import React from "react";
 import NavBar from "../components/NavBar";
 
 import "./homeStyles.css";
-import QuickLinks from "../components/quickLinks";
+import QuickLinks from "../components/QuickLinks";
 
 const Home = () => {
   return (
     <>
       <NavBar className="nav_bar" />
+
       <div className="background_image content_align">
         <section className="landing_page_content">
           <div className="intro_text">
-            <h3>Hi, I'm Ghanath Vootukuru</h3>
-            <p>This would be the landing page with a short description!</p>
+            <h3>Hii!</h3>
+            <h3>I'm Ghanath Vootukuru</h3>
+            <p>
+              Cybersecurity enthusiast with a knack for innovation and strategic
+              solutions.
+            </p>
           </div>
         </section>
 
-        <section className="quick_links">
-          <QuickLinks />
-        </section>
+        <QuickLinks />
       </div>
     </>
   );

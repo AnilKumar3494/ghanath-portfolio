@@ -6,6 +6,7 @@ import Container from "../components/Container";
 import "../components/container.css";
 import "../styles/globalStyles.css";
 import BgImg from "../components/BgImg";
+import QuickLinks from "../components/QuickLinks";
 
 const Intro = () => {
   const input = [
@@ -47,6 +48,8 @@ const Intro = () => {
           <Container input={input} />
         </div>
       </section>
+
+      <QuickLinks />
     </BgImg>
   );
 };

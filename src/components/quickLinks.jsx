@@ -9,7 +9,7 @@ import { IoDocumentAttach } from "react-icons/io5";
 //styles
 import "./quickLinksStyles.css";
 
-const QuickLinks = () => {
+const QuickLinks = ({ className }) => {
   const icons = [
     {
       id: 1,
@@ -34,7 +34,7 @@ const QuickLinks = () => {
   ];
 
   return (
-    <div className="icon_grid">
+    <div className={`icon_grid ${className}`}>
       {icons.map((icon) => (
         <a key={icon.id} href={icon.link} className="icon_link" target="_blank">
           <i>{icon.iconComponent}</i>

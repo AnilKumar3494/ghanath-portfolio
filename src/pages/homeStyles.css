@@ -58,7 +58,7 @@ p {
   gap: 3rem;
 
   /* border: 2px solid greenyellow; */
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(4px);
 }
 
 .intro_text {
@@ -71,16 +71,16 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   gap: 2rem;
 
   width: 70%;
 }
 
-/* QuickLinks */
-.quick_links {
+.quick_links_updated {
   position: absolute;
 
-  bottom: 7%;
+  bottom: 8%;
   left: 50%;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
