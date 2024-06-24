@@ -8,7 +8,7 @@ const NavBar = () => {
 
   const navLinks = [
     { path: "/", label: "Home" },
-    { path: "/intro", label: "Intro" },
+    { path: "/intro", label: "About" },
     { path: "/project", label: "Projects" },
 
     { path: "/experience", label: "Experience" },
@@ -22,6 +22,7 @@ const NavBar = () => {
           key={path}
           className={`nav_link ${location.pathname === path ? "active" : ""}`}
           to={path}
+          title={label}
         >
           {label}
         </Link>
