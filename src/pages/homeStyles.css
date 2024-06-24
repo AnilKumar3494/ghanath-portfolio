@@ -1,9 +1,14 @@
 h3 {
   font-size: var(--font-size-700);
 }
+
 p {
   font-size: var(--font-size-200);
   color: var(--medium-gray);
+}
+
+.home_nav_bar .nav_link.active {
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .content_align {
@@ -75,7 +80,7 @@ p {
 .quick_links {
   position: absolute;
 
-  bottom: 7rem;
+  bottom: 7%;
   left: 50%;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);

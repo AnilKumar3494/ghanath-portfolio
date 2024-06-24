@@ -38,9 +38,7 @@ const Intro = () => {
 
   return (
     <BgImg>
-      <nav>
-        <NavBar />
-      </nav>
+      <NavBar />
 
       <section className="container">
         <div className="container_content">
