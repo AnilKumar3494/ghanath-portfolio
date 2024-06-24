@@ -7,7 +7,7 @@ import QuickLinks from "../components/QuickLinks";
 const Home = () => {
   return (
     <>
-      <NavBar className="nav_bar" />
+      <NavBar />
 
       <div className="background_image content_align">
         <section className="landing_page_content">
