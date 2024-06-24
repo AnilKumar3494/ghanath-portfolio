@@ -9,7 +9,7 @@ const projectsInput = [
   {
     id: 1,
     projectTitle: "Digital Forensics Project",
-    duration: "May 2023-Sept 2023",
+    duration: "May 2023 - Sept 2023",
     description:
       "Conducted an in-depth analysis of hashing algorithms including MD5, SHA1, and SHA256 as part of an Information Forensics course project.",
     details: [
@@ -19,11 +19,10 @@ const projectsInput = [
       "Collaborated with team members to simulate real-world forensic scenarios and present findings on the significance of secure hashing algorithms in preserving digital evidence integrity.",
     ],
     demo: "#url",
-    code: "#github url",
   },
   {
     id: 2,
-    projectTitle: "TCP Traffic Analysis Using tcpdump",
+    projectTitle: "TCP Traffic Analysis Using TCPDump",
     duration: "Aug 2023",
     description:
       "Completed a guided project focusing on utilizing tcpdump, a versatile Linux networking utility, for capturing and analyzing TCP traffic.",
@@ -54,7 +53,7 @@ const projectsInput = [
   {
     id: 4,
     projectTitle: "Microsoft Windows Defender & Firewall",
-    duration: "May 2023-Aug 2023",
+    duration: "May 2023 - Aug 2023",
     description:
       "Completed the guided lab on Microsoft Windows Defender and Firewall for Beginners.",
     details: [
@@ -67,7 +66,7 @@ const projectsInput = [
   {
     id: 5,
     projectTitle: "Spotted Lanternfly Egg Detection System",
-    duration: "Sep 2022 – May 2023",
+    duration: "Sep 2022 - May 2023",
     description:
       "Ensured the project met quality standards and specifications by overseeing the implementation and testing processes.",
     details: [

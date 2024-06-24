@@ -1,8 +1,8 @@
 import React from "react";
 import NavBar from "../components/NavBar";
-import Container from "../components/Container";
 import BgImg from "../components/BgImg";
 import QuickLinks from "../components/QuickLinks";
+import ContactForm from "../components/ContactForm";
 
 const Contact = () => {
   return (
@@ -12,8 +12,12 @@ const Contact = () => {
       <section className="container">
         <div className="container_content">
           <h2 className="h2">Contact</h2>
-          {/* <img src="" alt="A sample project image would be here" /> */}
-          {/* <Container /> */}
+          <p>
+            Got questions about cybersecurity? I'm a fresh face eager to learn
+            and help! Drop me a line, and let's explore the world of firewalls,
+            hacks, and making the web safer together!
+          </p>
+          <ContactForm />
         </div>
       </section>
 
