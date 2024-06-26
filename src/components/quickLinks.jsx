@@ -13,30 +13,40 @@ const QuickLinks = ({ className }) => {
   const icons = [
     {
       id: 1,
-      link: "https://www.linkedin.com/feed/",
+      link: "https://www.linkedin.com/in/ghanath",
       iconComponent: <FaLinkedin />,
+      title: "LinkedIn",
     },
     {
       id: 2,
-      link: "https://www.linkedin.com/feed/",
+      link: "ghanath999@gmail.com",
       iconComponent: <MdEmail />,
+      title: "E-Mail",
     },
     {
       id: 3,
-      link: "https://www.linkedin.com/feed/",
+      link: "https://github.com/Ghanath",
       iconComponent: <FaGithub />,
+      title: "GitHub",
     },
     {
       id: 4,
       link: "https://www.linkedin.com/feed/",
       iconComponent: <IoDocumentAttach />,
+      title: "Resume",
     },
   ];
 
   return (
     <div className={`icon_grid ${className}`}>
       {icons.map((icon) => (
-        <a key={icon.id} href={icon.link} className="icon_link" target="_blank">
+        <a
+          key={icon.id}
+          href={icon.link}
+          className="icon_link"
+          target="_blank"
+          title={icon.title}
+        >
           <i>{icon.iconComponent}</i>
         </a>
       ))}
