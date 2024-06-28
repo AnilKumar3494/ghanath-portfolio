@@ -6,7 +6,7 @@ import Container from "../components/Container";
 import "../components/container.css";
 import "../styles/globalStyles.css";
 import BgImg from "../components/BgImg";
-import QuickLinks from "../components/QuickLinks";
+import QuickLinks from "../components/QuickLinks.jsx";
 
 const Intro = () => {
   const input = [

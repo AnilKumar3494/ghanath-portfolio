@@ -2,7 +2,7 @@ import React from "react";
 import NavBar from "../components/NavBar";
 import BgImg from "../components/BgImg";
 import Container from "../components/Container";
-import QuickLinks from "../components/QuickLinks";
+import QuickLinks from "../components/QuickLinks.jsx";
 
 const Experience = () => {
   const input = [
