@@ -1,8 +1,8 @@
 import React from "react";
 import NavBar from "../components/NavBar";
 import BgImg from "../components/BgImg";
-import QuickLinks from "../components/QuickLinks";
-import ContactForm from "../components/ContactForm";
+import QuickLinks from "../components/QuickLinks.jsx";
+import ContactForm from "../components/ContactForm.jsx";
 
 const Contact = () => {
   return (
