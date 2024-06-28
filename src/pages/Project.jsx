@@ -2,8 +2,7 @@ import React from "react";
 import NavBar from "../components/NavBar";
 import Container from "../components/Container";
 import BgImg from "../components/BgImg";
-import projectsBg from "../assets/backgroundImages/projectsBg.jpg";
-import QuickLinks from "../components/QuickLinks";
+import QuickLinks from "../components/QuickLinks.jsx";
 
 const projectsInput = [
   {

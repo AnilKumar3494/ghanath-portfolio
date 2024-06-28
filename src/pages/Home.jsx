@@ -2,7 +2,7 @@ import React from "react";
 import NavBar from "../components/NavBar";
 
 import "./homeStyles.css";
-import QuickLinks from "../components/QuickLinks";
+import QuickLinks from "../components/QuickLinks.jsx";
 
 const Home = () => {
   return (
