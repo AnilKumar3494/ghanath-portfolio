@@ -15,31 +15,32 @@ import "./styles/globalStyles.css";
 import Home from "./pages/Home";
 // import Container from "./components/Container";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home />,
-  },
-  {
-    path: "/intro",
-    element: <Intro />,
-  },
-  {
-    path: "/project",
-    element: <Project />,
-  },
-  {
-    path: "/experience",
-    element: <Experience />,
-  },
-  {
-    path: "/contact",
-    element: <Contact />,
-  },
-]);
+// const router = createBrowserRouter([
+//   {
+//     path: "/",
+//     element: <Home />,
+//   },
+//   {
+//     path: "/intro",
+//     element: <Intro />,
+//   },
+//   {
+//     path: "/project",
+//     element: <Project />,
+//   },
+//   {
+//     path: "/experience",
+//     element: <Experience />,
+//   },
+//   {
+//     path: "/contact",
+//     element: <Contact />,
+//   },
+// ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    {/* <RouterProvider router={router} /> */}
+    <Home />
   </React.StrictMode>
 );
