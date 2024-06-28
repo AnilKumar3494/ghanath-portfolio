@@ -7,7 +7,7 @@ import QuickLinks from "../components/QuickLinks.jsx";
 const Home = () => {
   return (
     <>
-      <NavBar />
+      {/* <NavBar /> */}
 
       <div className="background_image content_align">
         <section className="landing_page_content">
@@ -21,7 +21,7 @@ const Home = () => {
           </div>
         </section>
 
-        <QuickLinks />
+        {/* <QuickLinks /> */}
       </div>
     </>
   );
