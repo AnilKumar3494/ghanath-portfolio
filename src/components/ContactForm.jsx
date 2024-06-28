@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "emailjs-com"; // Using emailjs-com for sending emails
-import "./contactFormStyles.css"; // Import the CSS file for styles
+import "./contactFormStyles.css";
 
 const ContactForm = () => {
   const form = useRef();
@@ -8,26 +8,22 @@ const ContactForm = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
+    const service_id = "contact_service";
+    const template_id = "contact_form";
+    const public_key = "XI5E8bcVXElaIypkU";
+
     emailjs
-      .sendForm(
-        "service_your_service_id",
-        "template_your_template_id",
-        form.current,
-        "user_your_user_id"
-      )
+      .sendForm(service_id, template_id, form.current, {
+        publicKey: public_key,
+      })
       .then(
-        (result) => {
-          console.log(result.text);
-          console.log("Message sent successfully");
+        () => {
+          console.log("SUCCESS!");
         },
         (error) => {
-          console.log(error.text);
-          console.error("Failed to send message. Error:", error);
+          console.log("FAILED...", error.text);
         }
       );
-
-    // Clear the form fields after submission if needed
-    form.current.reset();
   };
 
   return (
@@ -42,7 +38,9 @@ const ContactForm = () => {
         <label htmlFor="message">Message</label>
         <textarea id="message" name="message" rows="5" required></textarea>
 
-        <button type="submit">Send</button>
+        <button type="submit" value="Send">
+          Send
+        </button>
       </form>
     </div>
   );
